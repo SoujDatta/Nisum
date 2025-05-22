@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PIM</title>
+    <link rel="stylesheet" href="./homepage.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <nav>
+            <h2>Product Info Management System</h2>
+        <ul>
+            <li class="active"> Dashboard</li>
+            <li>Products</li>
+            <li>Product Attributes</li>
+        </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <section class="dashboard-header">
+            <h1>Products Dashboard</h1>
+        </section>
+
+
+
+        <section class="stats-section">
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-label">Total Products</div>
+                    <div class="stat-value" id="total-products">1,250</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Recently Updated</div>
+                    <div class="stat-value" id="recent-updated">8</div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
+
+        <section class="products-list-section">
+
+            <div class="products-list-header">
+                <h2>Products List</h2>
+            </div>
+            <div class="products-list-header">
+                <div class="button-group">
+    <button id="addProductBtn">Add Product</button>
+    <button id="bulkImportBtn">Bulk Import</button>
+    
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button id="searchButton">🔍</button>
+    </div>
+</div>
+
+            </div>
+
+            <table class="products-table" id="productsTable">
+
+                <table class="products-table" id="productsTable">
+                    <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>SKU</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Last Modified</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tr>
+          <td>1</td>
+          <td>Mens Cotton Shirt</td>
+          <td>MSHR7001</td>
+          <td>Mens Apparel</td>
+          <td>Published</td>
+          <td>2024-04-23</td>
+          <td>
+            <button class="edit-btn">✏️</button>
+            <button class="delete-btn">🗑️</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Womens Floral Dress</td>
+          <td>WFLDR8001</td>
+          <td>Women Apparel</td>
+          <td>Published</td>
+          <td>2024-04-22</td>
+          <td>
+            <button class="edit-btn">✏️</button>
+            <button class="delete-btn">🗑️</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Kids Winter Jacket</td>
+          <td>KJAC3001</td>
+          <td>Kids Apparel</td>
+          <td>Draft</td>
+          <td>2024-04-20</td>
+          <td>
+            <button class="edit-btn">✏️</button>
+            <button class="delete-btn">🗑️</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mens Leather Jacket</td>
+          <td>MJAC7001</td>
+          <td>Mens Apparel</td>
+          <td>Published</td>
+          <td>2024-04-18</td>
+          <td>
+            <button class="edit-btn">✏️</button>
+            <button class="delete-btn">🗑️</button>
+          </td>
+        </tr>
+                    <tbody>
+                            <!--enter a code to import data from database using jdbc-->
+
+                    </tbody>
+
+
+            </table>
+        </section>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
